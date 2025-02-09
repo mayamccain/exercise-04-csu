@@ -85,8 +85,8 @@ Click the settings (wheel) icon next to `knit` to render the output document in 
 ```yaml
 ---
 title: "My First Quarto Document"
-author: "Your Name"
-date: today
+author: "Maya McCain"
+date: February 7, 2025
 format: html
 ---
 ```
@@ -252,7 +252,7 @@ big_cities  |>
   geom_point(aes(size = population, color = density)) + 
   scale_color_gradient(low = "blue", high = "red") + 
   labs(title = "USA Cities Population Stats",
-       subtitle = paste("Cities bigger then:", 
+       subtitle = paste("Cities bigger then: 100000", 
                         formatC(threshold, format="d", big.mark=","),
                         "people"),
        caption = paste("Made by:", rmarkdown::metadata$author, "- ESS 330"),
